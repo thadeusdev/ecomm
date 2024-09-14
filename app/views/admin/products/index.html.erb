@@ -50,6 +50,8 @@
               <% end %>
             </tbody>
           </table>
+          <!-- Added later after pagination -->
+          <%== pagy_nav(@pagy) if @pagy.pages > 1 %>
         </div>
       </div>
     </div>

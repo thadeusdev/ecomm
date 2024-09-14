@@ -36,5 +36,6 @@ Rails.application.routes.draw do
   get "success" => "checkouts#success"
   get "cancel" => "checkouts#cancel"
   post "webhooks" => "webhooks#stripe"
+  # post '/stripe_webhooks', to: 'stripe#webhook'
   
 end
