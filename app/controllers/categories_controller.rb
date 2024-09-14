@@ -2,6 +2,7 @@ class CategoriesController < ApplicationController
     def show
         @category = Category.find(params[:id])
         @products = @category.products
+        # filtering maximum price and minimum price
         if params[:max].present?
           @products = @products.where("price <= ?", params[:max])
         end
