@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # admin
   namespace :admin do
     resources :orders
     resources :products do
@@ -24,7 +25,11 @@ Rails.application.routes.draw do
     root to: "admin#index", as: :admin_root
   end
 
+  # users
+  resources :categories, only: [:show]
+  resources :products, only: [:show]
+
   get "admin" => "admin#index"
-  get "category" => "category#index"
+  # get "category" => "category#index"
   
 end
