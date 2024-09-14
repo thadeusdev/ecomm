@@ -31,5 +31,7 @@ Rails.application.routes.draw do
 
   get "admin" => "admin#index"
   # get "category" => "category#index"
+  get "cart" => "carts#show"
+  post "checkout" => "checkouts#create"
   
 end
