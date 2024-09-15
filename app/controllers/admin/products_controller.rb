@@ -56,8 +56,16 @@ class Admin::ProductsController < AdminController
 
   # DELETE /admin/products/1 or /admin/products/1.json
   def destroy
+    # Purge attached images
+    @admin_product.images.purge if @admin_product.images.attached?
+  
+    # Destroy associated records manually
+    @admin_product.stocks.destroy_all
+    @admin_product.order_products.destroy_all
+  
+    # Destroy the product
     @admin_product.destroy!
-
+  
     respond_to do |format|
       format.html { redirect_to admin_products_url, notice: "Product was successfully destroyed." }
       format.json { head :no_content }
