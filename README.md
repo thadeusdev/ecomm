@@ -1,4 +1,4 @@
-<img src="https://github.com/thadeusdev/ecomm/blob/main/app/assets/images/banner.webp" alt="Ecomm Banner" style="width:100%; height:300px;" />
+<img src="https://github.com/thadeusdev/ecomm/blob/main/app/assets/images/banner.webp" alt="Ecomm Banner" style="width:100%; max-height:300px;" />
 
 # Ecomm
 
