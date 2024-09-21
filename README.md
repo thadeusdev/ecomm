@@ -1,4 +1,6 @@
 
+![Ecomm Banner](https://github.com/thadeusdev/ecomm/blob/main/app/assets/images/banner.webp)
+
 # Ecomm
 
 **Ecomm** is a full-stack Ruby on Rails 7 e-commerce application with seamless checkout functionality, user authentication, and modern styling. It is powered by Hotwire, Stimulus, and Tailwind CSS for interactivity and design. Stripe handles the payment processing, PostgreSQL serves as the database, and Devise manages user authentication.
