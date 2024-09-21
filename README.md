@@ -1,5 +1,4 @@
-
-![Ecomm Banner](https://github.com/thadeusdev/ecomm/blob/main/app/assets/images/banner.webp)
+<img src="https://github.com/thadeusdev/ecomm/blob/main/app/assets/images/banner.webp" alt="Ecomm Banner" height="300">
 
 # Ecomm
 
