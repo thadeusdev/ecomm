@@ -1,4 +1,4 @@
-<img src="https://github.com/thadeusdev/ecomm/blob/main/app/assets/images/banner.webp" alt="Ecomm Banner" height="200" width="600">
+<img src="https://github.com/thadeusdev/ecomm/blob/main/app/assets/images/banner.webp" alt="Ecomm Banner" height="200" width="100%">
 
 # Ecomm
 
@@ -69,18 +69,19 @@ Ensure you have the following installed:
 
 ### Stripe Setup
 
-1. Set up your Stripe API keys by adding them to your environment variables or credentials file. You can store them in `config/credentials.yml.enc`:
+1. **Edit Rails credentials** to store your Stripe API keys securely:
+   ```bash
+   EDITOR="code --wait" bin/rails credentials:edit
+   ```
+
+   This will open the credentials file in VSCode (or your preferred editor). Add your Stripe keys in the following format:
    ```yaml
    stripe:
      secret_key: your_stripe_secret_key
      public_key: your_stripe_public_key
    ```
 
-2. Add the following to your `.env` file:
-   ```bash
-   STRIPE_PUBLIC_KEY=your_public_key
-   STRIPE_SECRET_KEY=your_secret_key
-   ```
+2. Once the keys are added and saved, Rails will securely manage them using encrypted credentials.
 
 ## Usage
 
