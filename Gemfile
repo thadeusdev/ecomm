@@ -64,4 +64,4 @@ gem "font-awesome-sass", "~> 6.5.1"
 
 gem "stripe", "~> 12.6"
 
-gem "pagy", "~> 9.0"
+gem "pagy", "~> 9.1"
